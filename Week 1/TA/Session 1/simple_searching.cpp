@@ -1,6 +1,4 @@
 #include <iostream>
-#include <algorithm>
-#include <iterator>
 using namespace std;
 
 int main(){
@@ -17,14 +15,12 @@ int main(){
     //set a boolean value for whether value is found
     for(int i = 0; i < 9; i++){
         if(key == data[i]){
-            key = i; //key variable repurposed to store array index
+            cout << "Found at index " << i << endl;
             found = true;
+            break;
         }
     }
-
-    if(found == true){
-        cout << "Found at index " << key << endl;
-    } else {
+    if(found == false){
         cout << "Not found" << endl;
     }
     
