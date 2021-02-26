@@ -5,7 +5,6 @@ using namespace std;
 
 int main(){
 
-
     // initializing variables
     int new_data;
     int location;
